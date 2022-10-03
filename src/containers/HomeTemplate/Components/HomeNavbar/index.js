@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 export default function HomeNavbar() {
   return (
     <div>
@@ -30,7 +31,7 @@ export default function HomeNavbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={"/login"}>
+              <a className="nav-link" href="/login">
                 Login
               </a>
             </li>
