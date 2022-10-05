@@ -1,0 +1,17 @@
+[
+    {
+        "id": "",
+        "tenPhim":"",
+        "noiDung":"",
+        "ngayCongChieu":"",
+        "ngayKetThuc":"",
+        "lichChieu":[
+            "10:10" , "14:00"
+        ],
+        "nam" :"2022",
+        "daoDien" :"",
+        "theLoai":"",
+        "ngayPhatHanh":"",
+        "hinhAnh" : ""
+    }
+]
