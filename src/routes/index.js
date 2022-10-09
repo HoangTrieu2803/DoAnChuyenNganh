@@ -1,7 +1,7 @@
 import Login from "../containers/HomeTemplate/Login";
 import HomePage from "../containers/HomeTemplate/Dashboard";
 import HomeTemplate from "../containers/HomeTemplate";
-import SignUp from "../containers/HomeTemplate/Signup"
+import SignUp from "../containers/HomeTemplate/SignUp"
 const routesHome = [
   //HomePage
   {

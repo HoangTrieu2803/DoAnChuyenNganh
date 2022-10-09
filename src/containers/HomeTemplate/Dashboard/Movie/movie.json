@@ -1,17 +1,80 @@
 [
-    {
-        "id": "",
-        "tenPhim":"",
-        "noiDung":"",
-        "ngayCongChieu":"",
-        "ngayKetThuc":"",
-        "lichChieu":[
-            "10:10" , "14:00"
-        ],
-        "nam" :"2022",
-        "daoDien" :"",
-        "theLoai":"",
-        "ngayPhatHanh":"",
-        "hinhAnh" : ""
-    }
+  {
+    "id": "001",
+    "tenPhim": "Jaws",
+    "noiDung": "Jaws is an American natural horror film series that started with a 1975 film that expanded into three sequels, a theme park ride, and other tie-in merchandise, based on a 1974 novel. The main subject of the saga is a great white shark, and its attacks on people in specific areas of the United States and The Bahamas",
+    "ngayCongChieu": "20/11/2013",
+    "ngayKetThuc": "20/12/2013",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2013",
+    "daoDien": "Steven Spielberg",
+    "theLoai": "Drama, Hài Hước, Kịch Tính, Phiêu Lưu",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/jaws.jpg"
+  },
+  {
+    "id": "002",
+    "tenPhim": "World War Z",
+    "noiDung": "Gerry, a former United Nations employee, unexpectedly finds himself in a race against time as he investigates a threatening virus that turns humans into zombies.",
+    "ngayCongChieu": "20/6/2013",
+    "ngayKetThuc": "20/7/2013",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2013",
+    "daoDien": "Marc Forster",
+    "theLoai": "Zombie, Kinh Dị, Hành Động, Drama, Viễn Tưởng, Kịch Tích",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/wwz.jpg"
+  },
+  {
+    "id": "003",
+    "tenPhim": "Iron Man 3",
+    "noiDung": "Tony Stark encounters a formidable foe called the Mandarin. After failing to defeat his enemy, Tony embarks on a journey of self-discovery as he fights against the powerful Mandarin.",
+    "ngayCongChieu": "25/3/2013",
+    "ngayKetThuc": "25/4/2013",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2013",
+    "daoDien": "Shane Black",
+    "theLoai": "Hành Động, Viễn Tưởng, Siêu Anh Hùng",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/ironman3.jpg"
+  },
+  {
+    "id": "004",
+    "tenPhim": "Monsters University",
+    "noiDung": "Mike and Sulley, two monsters, join Monsters University in order to graduate as the scariest monsters on the planet. While they are arch-rivals, gradually, they become best friends.",
+    "ngayCongChieu": "11/7/2013",
+    "ngayKetThuc": "11/8/2013",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2013",
+    "daoDien": "Dan Scanlon",
+    "theLoai": "Hài Hước, Viễn Tưởng, Phiêu Lưu, Hoạt Hình",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/mu.jpg"
+  },
+  {
+    "id": "005",
+    "tenPhim": "The Croods",
+    "noiDung": "In the primaeval era, Grug and his family risk the dangers of their surroundings to find a new dwelling place. Along the way, they meet a modern boy who woos them with his adventurous ways.",
+    "ngayCongChieu": "28/3/2013",
+    "ngayKetThuc": "28/4/2013",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2013",
+    "daoDien": "Chris Sanders, Kirk DeMicco",
+    "theLoai": "Hài Hước, Viễn Tưởng, Phiêu Lưu, Hoạt Hình",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/croods.jpg"
+  },
+  {
+    "id": "006",
+    "tenPhim": "Đôi Mắt Âm Dương",
+    "noiDung": "An amnesiac starts to see the ghost of a lady with blood-filled eyes wandering around her, so she decides to investigate the case.",
+    "ngayCongChieu": "25/11/2020",
+    "ngayKetThuc": "25/12/2020",
+    "lichChieu": ["10:10", "14:00"],
+    "nam": "2020",
+    "daoDien": "Nhat Trung",
+    "theLoai": "Kinh Dị, Kịch Tính, Giật Gân",
+    "ngayPhatHanh": "",
+    "hinhAnh": "../images/movie/yyeye.jpg"
+  }
 ]
