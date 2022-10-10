@@ -2,6 +2,7 @@ import Login from "../containers/HomeTemplate/Login";
 import HomePage from "../containers/HomeTemplate/Dashboard";
 import HomeTemplate from "../containers/HomeTemplate";
 import SignUp from "../containers/HomeTemplate/Signup"
+import Booking from "../containers/HomeTemplate/Booking";
 const routesHome = [
   //HomePage
   {
@@ -20,6 +21,12 @@ const routesHome = [
     exact: true,
     path: "/signup",
     component: SignUp,
+  },
+  //Booking
+  {
+    exact:true,
+    path:"/booking",
+    component:Booking,
   }
 ];
 const renderRouteHome = () => {
