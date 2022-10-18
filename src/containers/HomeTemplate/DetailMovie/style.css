@@ -1,0 +1,24 @@
+.left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.overlay__gradient {
+    background: linear-gradient(0deg,#0a2029,transparent);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

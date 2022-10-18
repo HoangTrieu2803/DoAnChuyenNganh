@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Support() {
   return (
-    <div className="pt-1 bg">
+    <div className="container pt-1">
       <section class="">
         <div class="container text-center text-md-start mt-5 text-white">
           <div class="row mt-3">

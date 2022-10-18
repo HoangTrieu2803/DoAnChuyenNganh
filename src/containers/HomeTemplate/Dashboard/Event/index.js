@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Event() {
   return (
-    <div className="container col-md-8">
+    <div className="container col-md-8 text-white">
       <h2 className="text-center">Khuyến Mãi</h2>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         <div className="col mb-3">
@@ -83,8 +83,9 @@ export default function Event() {
                   CGV Chào hè - Ưu đãi 50K Khi đặt vé Online
                 </h5>
                 <p className="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
             </div>
@@ -102,14 +103,15 @@ export default function Event() {
                 <h5 className="card-title">THỨ TƯ VUI VẺ - VÉ PHIM ƯU ĐÃI</h5>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
             </div>
           </a>
         </div>
       </div>
+      <hr className="container gach" />
     </div>
   );
 }

@@ -1,65 +1,53 @@
 import React from "react";
 import movie from "../Movie/movie.json";
-import { Component } from "react";
-import Slider from "react-slick";
-import "./index.css"
+import "./index.css";
 
-function NextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <img
-      src="../images/nextbutton.png"
-      onClick={onClick}
-      style={{ ...style, display: "block" }}
-      className={className}
-    />
-  );
-}
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectCoverflow, Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
-function PrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <img
-      src="../images/prevbutton.png"
-      onClick={onClick}
-      style={{ ...style, display: "block" }}
-      className={className}
-    />
-  );
-}
-
-export default class Movie extends Component {
-  render() {
-    const settings = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      prevArrow: <PrevArrow />,
-      nextArrow: <NextArrow />,
-    };
+export default function Movie() {
+  const local = localStorage.getItem("detail")
+  console.log(local)
+  const Movie = movie.map((movies) => {
     return (
-      <div className="container col-md-8 ">
-        <h2 className="text-center">Phim Đang Chiếu</h2>
-        <Slider {...settings}>
-          {movie.map((item) => (
-            <div
-              className="card border-light text-center px-2"
-              style={{ width: "18rem" }}
-            >
-              <div className="card-header">
-                <a href="#">
-                  <img src={item.hinhAnh} alt={item.tenPhim} className="box"/>
-                </a>
-              </div>
-              <div className="card-body">
-                <h3>{item.tenPhim}</h3>
-                <h4>{item.nam}</h4>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <SwiperSlide>
+        <Link to={`/detail/${local}`} onClick={() => {localStorage.setItem("detail",movies.id)}}  >
+          <img src={movies.hinhAnh} alt={movies.tenPhim} className="box" />
+          <h5 className="images pt-1">{movies.tenPhim}</h5>
+        </Link>
+      </SwiperSlide>
     );
-  }
+  });
+  return (
+    <div className="container col-md-8">
+      <h2 className="text-center text-white pt-2">Phim Đang Chiếu</h2>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"4"}
+        loop={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[EffectCoverflow, Navigation]}
+        className="mySwiper"
+      >
+        {Movie}
+      </Swiper>
+    </div>
+  );
 }

@@ -5,7 +5,7 @@ import Carousel from './Carousel'
 import Support from './Support'
 export default function HomePage() {
   return (
-    <div>
+    <div style={{backgroundColor: '#212121'}}>
       <Carousel/>
       <Movie/>
       <Event/>

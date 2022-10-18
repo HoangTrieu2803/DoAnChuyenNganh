@@ -10,7 +10,8 @@
     "daoDien": "Steven Spielberg",
     "theLoai": "Drama, Hài Hước, Kịch Tính, Phiêu Lưu",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/jaws.jpg"
+    "hinhAnh": "../images/movie/jaws.jpg",
+    "thoiLuong": "124"
   },
   {
     "id": "002",
@@ -23,7 +24,8 @@
     "daoDien": "Marc Forster",
     "theLoai": "Zombie, Kinh Dị, Hành Động, Drama, Viễn Tưởng, Kịch Tích",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/wwz.jpg"
+    "hinhAnh": "../images/movie/wwz.jpg",
+    "thoiLuong": "116"
   },
   {
     "id": "003",
@@ -36,7 +38,8 @@
     "daoDien": "Shane Black",
     "theLoai": "Hành Động, Viễn Tưởng, Siêu Anh Hùng",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/ironman3.jpg"
+    "hinhAnh": "../images/movie/ironman3.jpg",
+    "thoiLuong": "131"
   },
   {
     "id": "004",
@@ -49,7 +52,8 @@
     "daoDien": "Dan Scanlon",
     "theLoai": "Hài Hước, Viễn Tưởng, Phiêu Lưu, Hoạt Hình",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/mu.jpg"
+    "hinhAnh": "../images/movie/mu.jpg",
+    "thoiLuong": "104"
   },
   {
     "id": "005",
@@ -62,7 +66,8 @@
     "daoDien": "Chris Sanders, Kirk DeMicco",
     "theLoai": "Hài Hước, Viễn Tưởng, Phiêu Lưu, Hoạt Hình",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/croods.jpg"
+    "hinhAnh": "../images/movie/croods.jpg",
+    "thoiLuong": "120"
   },
   {
     "id": "006",
@@ -75,6 +80,7 @@
     "daoDien": "Nhat Trung",
     "theLoai": "Kinh Dị, Kịch Tính, Giật Gân",
     "ngayPhatHanh": "",
-    "hinhAnh": "../images/movie/yyeye.jpg"
+    "hinhAnh": "../images/movie/yyeye.jpg",
+    "thoiLuong": "101"
   }
 ]
