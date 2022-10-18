@@ -34,11 +34,6 @@ export default function HomeNavbar() {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Cụm Rạp <span className="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
               Tin Tức <span className="sr-only">(current)</span>
             </a>
           </li>
@@ -79,11 +74,6 @@ export default function HomeNavbar() {
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Phim <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Cụm Rạp <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">

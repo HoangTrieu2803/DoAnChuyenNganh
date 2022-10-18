@@ -1,0 +1,23 @@
+
+
+.box2:hover {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  transform: translateY(-5px);
+}
+
+.bg{
+  background-color: #212529
+}
+
+.text{
+  color:#949494;
+}
+
+.text:hover{
+  color:#949494;
+  text-decoration: none;
+}
+
+.brighter:hover{
+  color: aliceblue;
+}
