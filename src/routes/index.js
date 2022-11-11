@@ -1,7 +1,7 @@
-import Login from "../containers/HomeTemplate/Login";
+import Login from "../containers/HomeTemplate/Login/index";
 import HomePage from "../containers/HomeTemplate/Dashboard";
 import HomeTemplate from "../containers/HomeTemplate";
-import SignUp from "../containers/HomeTemplate/SignUp"
+import SignUp from "../containers/HomeTemplate/Signup/index"
 import { DetailMovie } from "../containers/HomeTemplate/DetailMovie";
 const routesHome = [
   //HomePage
