@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import movie from "../Movie/movie.json";
 import "./index.css";
 
@@ -7,12 +7,19 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { actFetchListMovie } from "./modules/action";
 import { EffectCoverflow, Navigation } from "swiper";
 import { Link } from "react-router-dom";
-
+import {useSelector , useDispatch} from "react-redux"
 export default function Movie() {
   const local = localStorage.getItem("detail")
-  console.log(local)
+  //call api
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(actFetchListMovie())
+  },[])
+  const data = useSelector((state) => state.listMovieReducer.data)
+  console.log(data)
   const Movie = movie.map((movies) => {
     return (
       <SwiperSlide>
