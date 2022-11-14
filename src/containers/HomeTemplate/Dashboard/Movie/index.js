@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./index.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -10,8 +9,8 @@ import { actFetchListMovie } from "./modules/action";
 import { EffectCoverflow, Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+
 export default function Movie() {
-  const local = localStorage.getItem("detail");
   //call api
   const dispatch = useDispatch();
   useEffect(() => {
@@ -19,11 +18,15 @@ export default function Movie() {
   }, []);
   const data = useSelector((state) => state.listMovieReducer.data);
   console.log(data);
-  const Movie = data?.map((movies,key) => {
+  const Movie = data?.map((movies, key) => {
     return (
       <SwiperSlide key={key}>
         <Link to={`/detail/${movies._id}`}>
-          <img src={`./images/${movies.img}`} alt={movies.name} className="box" />
+          <img
+            src={`./images/movie/${movies.img}`}
+            alt={movies.name}
+            className="box"
+          />
           <h5 className="images pt-1">{movies.name}</h5>
         </Link>
       </SwiperSlide>
@@ -54,15 +57,15 @@ export default function Movie() {
       >
         {Movie}
       </Swiper>
-      <iframe
+      {/* <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/TKCPCOsuxF8"
+        src="../Aquaman.mp4"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 }
