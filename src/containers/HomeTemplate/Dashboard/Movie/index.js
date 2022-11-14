@@ -1,5 +1,4 @@
-import React,{useEffect} from "react";
-import movie from "../Movie/movie.json";
+import React, { useEffect } from "react";
 import "./index.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,22 +9,22 @@ import "swiper/css/navigation";
 import { actFetchListMovie } from "./modules/action";
 import { EffectCoverflow, Navigation } from "swiper";
 import { Link } from "react-router-dom";
-import {useSelector , useDispatch} from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 export default function Movie() {
-  const local = localStorage.getItem("detail")
+  const local = localStorage.getItem("detail");
   //call api
   const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(actFetchListMovie())
-  },[])
-  const data = useSelector((state) => state.listMovieReducer.data)
-  console.log(data)
-  const Movie = movie.map((movies) => {
+  useEffect(() => {
+    dispatch(actFetchListMovie());
+  }, []);
+  const data = useSelector((state) => state.listMovieReducer.data);
+  console.log(data);
+  const Movie = data?.map((movies,key) => {
     return (
-      <SwiperSlide>
-        <Link to={`/detail/${local}`} onClick={() => {localStorage.setItem("detail",movies.id)}}  >
-          <img src={movies.hinhAnh} alt={movies.tenPhim} className="box" />
-          <h5 className="images pt-1">{movies.tenPhim}</h5>
+      <SwiperSlide key={key}>
+        <Link to={`/detail/${movies._id}`}>
+          <img src={`./images/${movies.img}`} alt={movies.name} className="box" />
+          <h5 className="images pt-1">{movies.name}</h5>
         </Link>
       </SwiperSlide>
     );
@@ -55,6 +54,15 @@ export default function Movie() {
       >
         {Movie}
       </Swiper>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TKCPCOsuxF8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 }

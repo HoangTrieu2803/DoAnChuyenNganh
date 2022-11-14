@@ -2,6 +2,7 @@ import * as ActionType from'./constant';
 import api from '../../../../../util/api';
 export const actFetchListMovie = ()=>{
     return (dispatch)=>{
+        //gui request
         dispatch(actListMovieRequest());
         api
         .get("https://movie-api-beryl.vercel.app/v1/movie")

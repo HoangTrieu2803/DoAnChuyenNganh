@@ -1,5 +1,6 @@
 .box {
   transition: box-shadow 0.3s;
+  object-fit: cover;
 }
 
 .box:hover {
@@ -28,6 +29,7 @@
 .images{
   text-decoration: none !important;
   color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .images:hover{

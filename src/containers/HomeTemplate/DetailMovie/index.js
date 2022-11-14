@@ -3,8 +3,11 @@ import movie from "../Dashboard/Movie/movie.json";
 import "./style.css";
 import "../Dashboard/Support";
 import Support from "../Dashboard/Support";
+import {useParams} from "react-router-dom"
 
 export const DetailMovie = () => {
+  const param = useParams();
+  console.log(param)
   const movieId = localStorage.getItem("detail");
   const render = () => {
     return movie.map((item) => {
