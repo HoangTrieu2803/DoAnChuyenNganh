@@ -32,6 +32,7 @@ export const DetailMovie = () => {
               >
                 <a
                   data-video={`{"source": [{"src":"../trailer/${data?.trailer}", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}`}
+                  className="container"
                 >
                   <img
                     className="img-responsive"
