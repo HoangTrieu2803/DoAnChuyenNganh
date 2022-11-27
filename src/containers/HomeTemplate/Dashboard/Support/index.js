@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Support() {
   return (
-    <div className="container pt-1">
+    <div className="container-fluid pt-1" style={{backgroundColor: '#212121'}}>
       <section class="">
         <div class="container text-center text-md-start mt-5 text-white">
           <div class="row mt-3">
@@ -102,7 +102,7 @@ export default function Support() {
           </div>
         </div>
       </section>
-      <hr />
+      <hr style={{backgroundColor: '#949491'}}/>
     </div>
   );
 }

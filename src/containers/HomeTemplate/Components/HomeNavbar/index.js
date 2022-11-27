@@ -1,6 +1,13 @@
 import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
+import { faMobileButton } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+
 export default function HomeNavbar() {
   const name = localStorage.getItem("User");
   const handleLogout = () => {
@@ -12,7 +19,10 @@ export default function HomeNavbar() {
       <div>
         <nav className="navbar navbar-expand-lg sticky-top">
           <Link className="navbar-brand" to={"/"}>
-            Navbar
+            <img
+              src="../favicon.ico"
+              style={{ width: "45px", height: "45px" }}
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -27,18 +37,21 @@ export default function HomeNavbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto center">
-              <li className="nav-item">
+              <li className="nav-item text-center">
                 <a className="nav-link" href="#">
+                  <FontAwesomeIcon icon={faFilm} /> <br />
                   Phim <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-center">
                 <a className="nav-link" href="#">
+                  <FontAwesomeIcon icon={faNewspaper} /> <br />
                   Tin Tức <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-center">
                 <a className="nav-link" href="#">
+                  <FontAwesomeIcon icon={faMobileButton} /> <br />
                   Ứng Dụng
                 </a>
               </li>
@@ -50,7 +63,8 @@ export default function HomeNavbar() {
                 onClick={handleLogout}
                 type="submit"
               >
-                Đăng Xuất
+                <FontAwesomeIcon icon={faRightFromBracket} size="xl" />
+                &nbsp; Đăng Xuất
               </button>
             </div>
           </div>
@@ -61,7 +75,7 @@ export default function HomeNavbar() {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <Link className="navbar-brand" to="/">
-        Navbar
+        <img src="../favicon.ico" style={{ width: "45px", height: "45px" }} />
       </Link>
       <button
         className="navbar-toggler"
@@ -76,29 +90,36 @@ export default function HomeNavbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto center">
-          <li className="nav-item">
+          <li className="nav-item text-center">
+            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </li>
+          <li className="nav-item text-center">
             <a className="nav-link" href="#">
+              <FontAwesomeIcon icon={faFilm} /> <br />
               Phim <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item text-center">
             <a className="nav-link" href="#">
+              <FontAwesomeIcon icon={faNewspaper} /> <br />
               Tin Tức <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item text-center">
             <a className="nav-link" href="#">
+              <FontAwesomeIcon icon={faMobileButton} /> <br />
               Ứng Dụng
             </a>
           </li>
         </ul>
         <div>
           <Link className="nav-link login" to={"/login"}>
-            <img
+            {/* <img
               className="login_img"
               src="https://i.ibb.co/PCjW83Y/avt.png"
               alt="user"
-            />
+            /> */}
+            <FontAwesomeIcon icon={faUser} size="xl" />
             &nbsp; Đăng Nhập
           </Link>
         </div>

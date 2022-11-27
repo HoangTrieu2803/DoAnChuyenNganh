@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import "./style.css";
 import "../Dashboard/Support";
 import Support from "../Dashboard/Support";
+import Footer from "../Dashboard/Footer";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { actFetchDetail } from "./modules/action";
@@ -75,6 +76,7 @@ export const DetailMovie = () => {
         </div>
       </div>
       <Support />
+      <Footer />
     </div>
   );
 };

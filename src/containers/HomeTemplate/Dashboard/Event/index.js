@@ -111,7 +111,6 @@ export default function Event() {
           </a>
         </div>
       </div>
-      <hr className="container gach" />
     </div>
   );
 }

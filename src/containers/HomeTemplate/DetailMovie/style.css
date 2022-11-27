@@ -25,10 +25,14 @@
 
 .lg-outer .lg-item:before,
 .lg-outer .lg-img-wrap:before {
-  height: 0% !important;
   display: none !important;
-}
-
+}  
+  
 .lg-video-cont {
     width: auto !important;
+    margin-top: -8%;
+}
+
+hr {
+  margin-bottom: 0.5px !important;
 }

@@ -4,6 +4,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./modules/firebase-config";
 import { Link } from "react-router-dom";
 import "./index.css";
+import Footer from "../Dashboard/Footer";
+
 export default function Login(props) {
   const [loginEmail, setloginEmail] = useState("");
   const [loginPassword, setloginPassword] = useState("");
@@ -24,6 +26,7 @@ export default function Login(props) {
     window.location.replace("/");
   }
   return (
+    <>
     <section className="container-fluid backgroundBody pb-5">
       <div className="container-fluid col-4 mt-4 text-white ">
         <div className="loginForm py-4 px-4">
@@ -75,5 +78,7 @@ export default function Login(props) {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }

@@ -3,6 +3,7 @@ import Movie from './Movie'
 import Event from './Event'
 import Carousel from './Carousel'
 import Support from './Support'
+import Footer from './Footer'
 export default function HomePage() {
 
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Movie/>
       <Event/>
       <Support/>
+      <Footer/>
     </div>
   )
 }
